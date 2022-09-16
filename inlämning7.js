@@ -5,10 +5,17 @@ var prompt = ps();
 var test;
 
 
-test = prompt('skriv något tecken ');
+test = Number(prompt('skriv något tecken '));
 
 
 if(typeof test === 'boolean') {
     console.log()
 }
-console.log(test)
+
+if(Number.isInteger(test) == true && test>0) {
+    console.log('det är ett tal som är positivt')
+}
+
+if (Number.isInteger(test) == true && test<0) {
+    console.log('är ett tal och är negativt')
+}

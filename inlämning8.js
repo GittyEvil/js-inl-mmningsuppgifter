@@ -7,3 +7,5 @@ var månad;
 
 dag = prompt('skriv ett datum ');
 månad = prompt('skriv en månad ');
+
+
